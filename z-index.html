@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         :root{
+            --primary-color:green;
+            --secondary-color:green;
+       }
+        div{
+            height: 250px;
+            width: 250px;
+        }
+        #div1{
+            background: green;
+            background: var(--primary-color,green);
+            position: absolute;
+            z-index: 1;
+
+        }
+        #div2{
+            background: red;
+            background-color: red;
+            position: absolute;
+            left: 150px;
+            top: 150px;
+            z-index: -2;
+        }
+         @media screen and(max-width:600px){
+            :root{
+            --primary-color:black;
+            --secondary-color:green;
+       }
+            
+         }
+            
+        
+    </style>
+</head>
+<body>
+    <div id="div1"></div>
+    <div id="div2"></div>
+</body>
+</html>
