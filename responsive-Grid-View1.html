@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive grid</title>
+<style>
+*{
+    box-sizing: border-box;
+}
+
+.header{
+    background-color: coral;
+    color: white;
+    padding: 1% 5%;
+    text-align: center;
+}
+
+
+.nav-menu{
+    padding: 1% 5%;
+    background-color: #39a4ac;
+}
+.nav-menu a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px;
+    display: block;
+}
+.main{
+    padding: 1% 5%;
+    background-color: turquoise;
+}
+.aside{
+    padding: 1% 5%;
+    background-color:#39a4ac;
+    text-align: center;
+}
+.footer{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+/* for desktop:*/
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+[class*="col-"]{
+    float: left;
+    padding: 10px;
+}
+.row::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+@media only screen and (max-width:768px) {
+
+    [class*="col-"]{
+    width: 100%;
+}
+.nav-menu a{
+    text-align: center;
+    background-color:coral;
+    margin: 10px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Chadni Talukder</h1>
+
+    </div>
+    <div class="row">
+    <div class="nav-menu col-2">
+        <a href="#">Home</a>
+        <a href="#">Tutorial</a>
+        <a href="#">Ciuntact</a>
+    </div>
+    <div class="main col-7">
+        <h1>I am a web designer</h1>
+        <p>Sanctus amet justo vero lorem et dolores et elitr stet. Gubergren voluptua ipsum lorem vero erat elitr. No ipsum erat sed justo voluptua, diam et dolor vero gubergren eos, invidunt justo dolor ea erat duo. Sea tempor clita sea sed. Duo rebum vero clita no lorem. Et stet eirmod justo.Aliquyam dolore clita sit est consetetur. Lorem aliquyam accusam diam sadipscing ea, sadipscing tempor
+            gubergren takimata lorem sea et sed.</p>
+
+        <p>Lorem diam no dolores lorem et eos nonumy clita, diam lorem justo sea erat sit, ea sea stet labore nonumy sed, aliquyam invidunt vero accusam kasd kasd sea sed. Sed consetetur diam dolor kasd tempor diam amet vero, sanctus ipsum eirmod eirmod takimata voluptua. Sanctus aliquyam labore dolor justo est labore rebum rebum, invidunt accusam ut nonumy dolor labore, takimata sed takimata lorem amet vero et, sea sit sanctus gubergren ipsum lorem. Sadipscing est clita aliquyam diam ipsum voluptua dolor aliquyam tempor, consetetur sea consetetur accusam labore no, et dolores eos et rebum eos lorem et. Rebum sadipscing stet sed.Takimata rebum vero voluptua at amet justo et diam, labore et consetetur et ipsum dolor no voluptua, sanctus
+            sed est.</p>
+
+        <p>Takimata amet et eos dolor sanctus tempor dolor et, dolores et et dolor est et, est et eos magna elitr, accusam justo voluptua sea ipsum justo voluptua. Gubergren dolor stet.Eirmod ea dolores labore invidunt rebum. Dolore gubergren sanctus labore ea takimata eos elitr elitr et.
+            Aliquyam sea aliquyam no.</p>
+
+
+    </div>
+    <div class="aside col-3">
+        <h2>What I Love</h2>
+        <p>Lorem ut sadipscing voluptua dolor sadipscing. Et dolor sed sea.</p>
+
+        <h2>What I DO</h2>
+        <p>Rebum magna clita takimata takimata eirmod amet no amet nonumy.</p>
+
+        <h2>What I don't love</h2>
+        <p>Takimata tempor eos et sadipscing diam sed, justo aliquyam at.</p>
+
+        <h2>What I don't Do</h2>
+        <p>Et sanctus ipsum sanctus ea kasd dolor accusam consetetur diam,.</p>
+
+
+    </div>
+</div>
+
+<div class="footer">
+
+    &copy;study with Puja 2023.
+</div>
+    
+
+
+</body>
+
+</html>

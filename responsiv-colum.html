@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive colum</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        
+
+
+        .column{
+            float: left;
+            width: 25%;
+            padding: 10px;
+
+
+        }
+
+@media screen  and (max-width:992px) {
+    .column{float: left;
+    width: 50%;
+    }
+    
+}
+@media screen and (max-width:600px) {
+.column{
+    width: 100%;
+    
+}
+    
+}
+    
+
+
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="row">
+<div class="column">
+    <h1>HTML</h1>
+    <p>Clita sanctus et lorem sadipscing dolor sea invidunt eos. Clita diam at duo clita sit elitr vero. Et ipsum ea.</p>
+
+
+</div>
+<div class="column">
+    <h1>CSS</h1>
+    <p>Rebum diam accusam diam et magna diam sit clita eos diam. Sea clita consetetur dolore labore. Et sed diam invidunt.</p>
+
+</div>
+<div class="column">
+    <h1>JS</h1>
+    <p>Et labore no invidunt sed elitr ea. Takimata eos justo diam ipsum sadipscing sed. Elitr lorem rebum rebum sadipscing et.</p>
+</div>
+<div class="column">
+    <h1>Bootstrap</h1>
+    <p>Diam sed labore lorem rebum eirmod magna duo, eos gubergren erat dolore amet duo accusam, diam no et amet sed.</p>
+</div>
+
+    </div>
+</body>
+</html>
