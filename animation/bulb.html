@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb animation</title>
+    <style>
+        body{
+            background: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #bulb{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background:black;
+            height: 100vh;
+            color: ;
+            position: relative;
+        }
+        #bulb a{
+            color: blueviolet;
+            text-decoration: none;
+            
+        }
+        #bulb::after{
+            content: '';
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            background-image: url(img/bulb_1-removebg-preview.png);
+            animation: bulb2 5s linear 1s infinite;;
+        }
+
+        #bulb::before{
+            content: '';
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            background-image: url(img/bulb2-removebg-preview.png);
+            animation: bulb2  3s linear 1s infinite;
+        }
+        @keyframes bulb1{
+            0%{
+                opacity: 0;
+            }
+            50%{
+                opacity: 1;
+            }
+            100%{
+                opacity: 0;
+            }
+        
+        }
+        @keyframes bulb2{
+            0%{
+                opacity: 9;
+            }
+            50%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="bulb">
+        <a href="#"><h1>Light</h1></a>
+    </div>
+    
+</body>
+</html>
