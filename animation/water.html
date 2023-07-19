@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water effect</title>
+    <style>
+        @import url('https//font.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #000;
+        }
+        .content{
+            position: relative;
+        }
+        .content h2{
+            position: absolute;
+            transform: translate(-50%, -50%);
+            font-size: 8em;
+        }
+        .content h2:nth-child(1){
+            color: transparent;
+            -webkit-text-stroke: 2px  #03a9f4;
+        }
+        .content h2:nth-child(2){
+            color: #03a9f4;
+        animation:animate 4s ease-in-out infinite;
+        }
+        @keyframes animate{
+            0%,100%{
+                clip-path: polygon(0 45%, 17% 48%, 32% 53%, 49% 61%, 66% 58%, 81% 59%, 93% 56%, 100% 56%, 100% 98%, 1% 97%);
+            }
+            50%{
+                clip-path: polygon(0 63%, 18% 66%, 34% 65%, 50% 61%, 64% 56%, 76% 50%, 90% 48%, 100% 51%, 100% 98%, 1% 97%);
+            }
+
+
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h2>Water</h2>
+        <h2>Water</h2>
+    </div>
+    
+</body>
+</html>

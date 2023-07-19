@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>anim</title>
+    
+    <style>
+        #anim {
+            background:black;
+            height: 500px;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+        #anim::after {
+            content: "";
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-image: url(img/footer-shape1.png);
+            animation: imgchange 1s linear 1s infinite;
+        }
+        #anim::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: url(img/footer-shape2.png);
+            animation: imgchang2 1s linear 1s infinite;
+        }
+        @keyframes imgchang{
+            0%{
+                opacity: 0;
+            }
+            50%{
+                opacity: 1;
+            }
+            100%{
+                opacity: 0;
+            }
+        }
+        @keyframes imgchang2{
+            0%{
+                opacity: 1;
+            }
+            50%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="anim">
+        <h1>Animation</h1>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins' sans-serif;
+    box-sizing: border-box;
+}
+.main{
+
+    height: 100%;
+    width: 100%;
+    background:#fff;
+
+}
+
+.google{
+text-align: center;
+} 
+.google img{
+    
+    width: 300px;
+    height: 200px;
+    margin-top:100px;
+    
+}
+.search{
+    position: relative;
+    background:#fff;
+    width: 500px;
+    min-width: 300px;
+    height:40px ;
+    border-radius: 50px;
+    margin:auto;
+    border: 1px solid #f8f3f3;
+    box-shadow: 0 0 4px 0px;
+}
+.search input{
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    background:transparent ;
+    outline: 0;
+    border: 0;
+    margin-left: 30px;
+    font-size:17px ;
+}
+.search img{
+    width: 20px;
+    height: 20px;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+.search i{
+margin-left: 85%;
+color:blue;
+
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    gap: 60px;
+
+}
+
+.menu-box i{
+    font-size: 30px;
+    background: #ccc;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding-left: 10px ;
+    color: green;
+    padding-top: 10px;
+}
+.menu-box p{
+font-size:18px;
+margin-top: 15px
+}
+.red i{
+    color: red;
+}
+.yellow i{
+    color: rgb(230, 172, 12);
+}
+.blue i{
+    color: rgb(12, 72, 238);
+}
