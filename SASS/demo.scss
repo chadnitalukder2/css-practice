@@ -7,8 +7,20 @@ $footer-bgcolor:#ffaec0;
 
 $pera-fontsize:2rem;
 
-
-
+@mixin para-style($size, $style){
+    font-size: $size;
+    font-size: 16px;
+    text-align: $style;
+    margin: 10px 0;
+}
+#about p{
+    @include para-style(18px,left);
+   
+}
+#Education p{
+    @include para-style(16px,justify);
+    
+}
 *{
     margin: 0;
     padding: 0;
@@ -45,7 +57,7 @@ nav{
 main{
     background: $main-bgcolor;
 }
-#about p{
+//#about p{
 font-size: $pera-fontsize;
 }
 footer{
