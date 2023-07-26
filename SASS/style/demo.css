@@ -1,0 +1,55 @@
+/* browser reset code*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background: #ffab73;
+}
+
+#about p {
+  font-size: 20px;
+  text-align: left;
+  margin: 10px;
+}
+
+#education p {
+  font-size: 16px;
+  text-align: justify;
+  margin: 10px;
+}
+
+nav {
+  margin-top: 15px;
+}
+nav ul {
+  list-style-type: none;
+}
+nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+nav ul li a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  transition: 0.4s;
+  border-radius: 5px;
+}
+nav ul li a:hover {
+  background: black;
+}
+
+main {
+  background: #ffd384;
+}
+
+/*footer{
+    background: $footer-bgcolor;
+}
+#about p{
+    font-size: $para-fontsize;
+}*//*# sourceMappingURL=demo.css.map */

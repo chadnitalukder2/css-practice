@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love project</title>
+</head>
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: #040d19;
+    }
+    .container{
+        height: 100px;
+        width: 100px;
+        background:red;
+        position: relative;
+        transform: rotate(-45deg);
+        box-shadow: -10px 10px 90px red;
+        animation: beating .6s linear infite;
+        cursor: pointer;
+    }
+    @keyframes beatting{
+        0%{
+            transform: rotate(-45deg)  scale(1.07);
+        }
+        80%{
+            transform: rotate(-45deg)  scale(1.0);
+        }
+        100%{
+            transform: rotate(-45deg)  scale(1.08);
+        }
+    }
+    .container .shape1{
+position: absolute;
+height: 100px;
+width: 100px;
+background:red;
+top: -40px;
+border-radius: 50px;
+    }
+    .container .shape2{
+position: absolute;
+height: 100px;
+width: 100px;
+background:red;
+right: -40px;
+border-radius: 50px;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="shape1"></div>
+        <div class="shape2"></div>
+    </div>
+</body>
+</html>
