@@ -5,6 +5,32 @@
     padding: 0;
     box-sizing: border-box;
 }
+/*--------each---------*/
+@each $color in red,green, blue{
+    .#{$color}-text {
+        color:$color;
+    }
+}
+
+/*--------if,else if, else------*/
+
+@mixin setFontsize($value){
+    @if $value == small{
+        font-size:12px;
+    }
+    @else if $value == medium{
+        font-size:20px;
+    }
+    @else if $value == large{
+        font-size:30px;
+    }
+    @else {
+        font-size:none;
+    }
+}
+
+
+
 /*-----for ----------*/
 /*--------while--------*/
 
@@ -102,9 +128,10 @@ nav{
                 display: inline-block;
                 color: white;
                 text-decoration: none;
-                padding: 10px;
+                padding: 20px;
                 transition: .4s;
                 border-radius: 5px;
+                @include setFontsize(medium);
             }
             a:hover{
                 background: black;
