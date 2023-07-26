@@ -1,18 +1,30 @@
-$header-bgcoloc:#ffab73;
-$main-bgcolor:#ffd384;
-$footer-bgcolor:#ffaec0;
 
-
-$para-fontsize:15px;
 /* browser reset code*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-header{
-    background: $header-bgcoloc;
+
+
+/*---------Extend----------*/
+.btn{
+    border: none;
+    padding: 15px 30px;
+    text-align: 16px;
+    cursor: pointer;
 }
+.btn-download{
+    @extend .btn;
+    background:palevioletred;
+}
+.learn-more{
+    @extend .btn;
+    background: #b81337;
+}
+
+
+/*----------mixin------------*/
 @mixin para-style ($size,$style){
     font-size: $size;
     text-align: $style;
@@ -24,6 +36,17 @@ header{
 }
 #education p{
     @include para-style(16px,justify);
+}
+/*-------variable--------*/
+
+$header-bgcoloc:#ffab73;
+$main-bgcolor:#ffd384;
+$footer-bgcolor:#ffaec0;
+
+$para-fontsize:15px;
+
+header{
+    background: $header-bgcoloc;
 }
 
 nav{
