@@ -5,7 +5,49 @@
     padding: 0;
     box-sizing: border-box;
 }
+/*-----for ----------*/
+/*--------while--------*/
 
+[class*="col-"]{
+    float: left;
+}
+ 
+$i:1;
+@while $i < 13 {
+    .col-#{$i} {
+        width: 100% / 12 * $i ;
+    }
+    $i: $i + 1;
+}
+
+.col-x{width: 100% / 12 *x}
+
+@for $i from 1 through 12{
+    .col-#{$i} {
+        width: 100% / 12 * $i ;
+    }
+}
+
+.row::after{
+    clear: both;
+    content: '';
+    display: table;
+}
+
+
+
+/*.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}*/
 
 /*---------Extend----------*/
 .btn{
@@ -39,7 +81,7 @@
 }
 /*-------variable--------*/
 
-$header-bgcoloc:#ffab73;
+$header-bgcoloc:#d88b58;
 $main-bgcolor:#ffd384;
 $footer-bgcolor:#ffaec0;
 
@@ -75,9 +117,9 @@ nav{
 main{
     background: $main-bgcolor;
 }
-/*footer{
+footer{
     background: $footer-bgcolor;
 }
-#about p{
+/*#about p{
     font-size: $para-fontsize;
 }*/
