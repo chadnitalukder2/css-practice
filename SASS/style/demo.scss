@@ -13,6 +13,18 @@ $para-fontsize:15px;
 header{
     background: $header-bgcoloc;
 }
+@mixin para-style ($size,$style){
+    font-size: $size;
+    text-align: $style;
+    margin: 10px;
+}
+#about p{
+    @include para-style(20px,left);
+    
+}
+#education p{
+    @include para-style(16px,justify);
+}
 
 nav{
     margin-top: 15px;
@@ -40,9 +52,9 @@ nav{
 main{
     background: $main-bgcolor;
 }
-footer{
+/*footer{
     background: $footer-bgcolor;
 }
 #about p{
     font-size: $para-fontsize;
-}
+}*/

@@ -9,6 +9,18 @@ header {
   background: #ffab73;
 }
 
+#about p {
+  font-size: 20px;
+  text-align: left;
+  margin: 10px;
+}
+
+#education p {
+  font-size: 16px;
+  text-align: justify;
+  margin: 10px;
+}
+
 nav {
   margin-top: 15px;
 }
@@ -35,10 +47,9 @@ main {
   background: #ffd384;
 }
 
-footer {
-  background: #ffaec0;
+/*footer{
+    background: $footer-bgcolor;
 }
-
-#about p {
-  font-size: 15px;
-}/*# sourceMappingURL=demo.css.map */
+#about p{
+    font-size: $para-fontsize;
+}*//*# sourceMappingURL=demo.css.map */
