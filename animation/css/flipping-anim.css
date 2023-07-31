@@ -38,12 +38,10 @@
 
     backface-visibility: hidden;
 
-
-
 }
 
 .card__side-front {
-    background-image: url(/img/nitesh5.jpg);
+    background-image: url(../img/nitesh5.jpg);
     
 
 }
